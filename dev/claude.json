@@ -1,0 +1,22 @@
+{
+  "run": [{
+    "when": "{{which('claude')}}",
+    "method": "jump",
+    "params": {
+      "id": "run"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "pnpm install -g @anthropic-ai/claude-code"
+    }
+  }, {
+    "id": "run",
+    "method": "shell.run",
+    "params": {
+      "message": "claude",
+      "path": "{{args.cwd}}",
+      "input": true
+    }
+  }]
+}

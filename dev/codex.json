@@ -1,0 +1,27 @@
+{
+  "pre": [{
+    "title": "OpenAI API Key",
+    "env": "OPENAI_API_KEY",
+    "key": "openai.com"
+  }],
+  "run": [{
+    "when": "{{which('codex')}}",
+    "method": "jump",
+    "params": {
+      "id": "run"
+    }
+  }, {
+    "method": "shell.run",
+    "params": {
+      "message": "pnpm install -g @openai/codex"
+    }
+  }, {
+    "id": "run",
+    "method": "shell.run",
+    "params": {
+      "message": "codex",
+      "path": "{{args.cwd}}",
+      "input": true
+    }
+  }]
+}
