@@ -65,6 +65,14 @@ module.exports = {
             },
           },
           {
+            image: "/asset/plugin/dev/gemini.jpeg",
+            text: "Gemini CLI",
+            href: "/run/plugin/dev/gemini.json",
+            params: {
+              cwd: info.cwd()
+            },
+          },
+          {
             image: "/asset/plugin/dev/cursor.jpeg",
             text: "Cursor",
             run: {

@@ -1,0 +1,11 @@
+{
+  "run": [{
+    "id": "run",
+    "method": "shell.run",
+    "params": {
+      "message": "npx -y https://github.com/google-gemini/gemini-cli",
+      "path": "{{args.cwd}}",
+      "input": true
+    }
+  }]
+}
