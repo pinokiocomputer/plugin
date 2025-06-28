@@ -5,21 +5,10 @@
     "key": "openai.com"
   }],
   "run": [{
-    "when": "{{which('codex')}}",
-    "method": "jump",
-    "params": {
-      "id": "run"
-    }
-  }, {
-    "method": "shell.run",
-    "params": {
-      "message": "pnpm install -g @openai/codex"
-    }
-  }, {
     "id": "run",
     "method": "shell.run",
     "params": {
-      "message": "codex",
+      "message": "npx -y @openai/codex",
       "path": "{{args.cwd}}",
       "input": true
     }
