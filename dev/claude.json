@@ -6,7 +6,7 @@
       "message": "npx -y @anthropic-ai/claude-code@latest",
       "path": "{{args.cwd}}",
       "input": true,
-      "interactive": true
+      "buffer": 1024
     }
   }]
 }
