@@ -3,7 +3,7 @@
     "id": "run",
     "method": "shell.run",
     "params": {
-      "message": "npx -y npx @google/gemini-cli@latest",
+      "message": "npx -y @google/gemini-cli@latest",
       "path": "{{args.cwd}}",
       "input": true
     }
