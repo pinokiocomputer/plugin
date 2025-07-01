@@ -1,13 +1,9 @@
 {
   "run": [{
+    "id": "run",
     "method": "shell.run",
     "params": {
-      "message": "npm install -g @google/gemini-cli@latest"
-    }
-  }, {
-    "method": "shell.run",
-    "params": {
-      "message": "gemini",
+      "message": "npx -y https://github.com/google-gemini/gemini-cli",
       "path": "{{args.cwd}}",
       "input": true
     }
