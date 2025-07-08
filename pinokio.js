@@ -73,6 +73,14 @@ module.exports = {
             },
           },
           {
+            image: "/asset/plugin/dev/vscode.png",
+            text: "VS Code",
+            run: {
+              message: "code .",
+              path: info.cwd()
+            }
+          },
+          {
             image: "/asset/plugin/dev/cursor.jpeg",
             text: "Cursor",
             run: {
