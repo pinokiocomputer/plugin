@@ -1,5 +1,20 @@
 {
   "run": [{
+    "when": "{{platform === 'win32'}}",
+    "id": "run",
+    "method": "shell.run",
+    "params": {
+      "shell": "{{which('bash')}}",
+      "env": {
+        "shell": "{{which('bash')}}"
+      },
+      "message": "npx -y @anthropic-ai/claude-code@latest",
+      "path": "{{args.cwd}}",
+      "input": true,
+      "buffer": 1024
+    }
+  }, {
+    "when": "{{platform !== 'win32'}}",
     "id": "run",
     "method": "shell.run",
     "params": {
