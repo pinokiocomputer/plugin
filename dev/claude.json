@@ -5,6 +5,9 @@
     "method": "shell.run",
     "params": {
       "shell": "{{which('bash')}}",
+      "conda": {
+        "skip": true
+      },
       "env": {
         "CLAUDE_CODE_GIT_BASH_PATH": "{{which('bash')}}"
       },
