@@ -9,7 +9,7 @@
         "skip": true
       },
       "env": {
-        "CLAUDE_CODE_GIT_BASH_PATH": "{{which('bash', /\.exe/i)}}"
+        "CLAUDE_CODE_GIT_BASH_PATH": "{{which('bash', /exe/i)}}"
       },
       "message": "npx -y @anthropic-ai/claude-code@latest",
       "path": "{{args.cwd}}",
