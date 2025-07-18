@@ -4,7 +4,7 @@
     "id": "run",
     "method": "shell.run",
     "params": {
-      "shell": "{{which('bash', /\.exe/i)}}",
+      "shell": "{{which('bash', /exe/i)}}",
       "conda": {
         "skip": true
       },
