@@ -4,12 +4,12 @@
     "id": "run",
     "method": "shell.run",
     "params": {
-      "shell": "{{kernel.path('bin/miniconda/Library/bin/bash')}}",
+      "shell": "{{kernel.path('bin/miniconda/Library/bin/bash.exe')}}",
       "conda": {
         "skip": true
       },
       "env": {
-        "CLAUDE_CODE_GIT_BASH_PATH": "{{kernel.path('bin/miniconda/Library/bin/bash')}}"
+        "CLAUDE_CODE_GIT_BASH_PATH": "{{kernel.path('bin/miniconda/Library/bin/bash.exe')}}"
       },
       "message": "npx -y @anthropic-ai/claude-code@latest",
       "path": "{{args.cwd}}",
