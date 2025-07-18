@@ -4,12 +4,12 @@
     "id": "run",
     "method": "shell.run",
     "params": {
-      "shell": "{{which('bash')}}",
+      "shell": "{{which('bash', /\.exe/i)}}",
       "conda": {
         "skip": true
       },
       "env": {
-        "CLAUDE_CODE_GIT_BASH_PATH": "{{which('bash')}}"
+        "CLAUDE_CODE_GIT_BASH_PATH": "{{which('bash', /\.exe/i)}}"
       },
       "message": "npx -y @anthropic-ai/claude-code@latest",
       "path": "{{args.cwd}}",
