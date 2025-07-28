@@ -57,6 +57,14 @@ module.exports = {
             },
           },
           {
+            image: "/asset/plugin/dev/gemini.jpeg",
+            text: "Gemini CLI",
+            href: "/run/plugin/dev/gemini.json",
+            params: {
+              cwd: info.cwd()
+            },
+          },
+          {
             image: "/asset/plugin/dev/openai.webp",
             text: "OpenAI Codex",
             href: "/run/plugin/dev/codex.json",
@@ -65,9 +73,9 @@ module.exports = {
             },
           },
           {
-            image: "/asset/plugin/dev/gemini.jpeg",
-            text: "Gemini CLI",
-            href: "/run/plugin/dev/gemini.json",
+            image: "/asset/plugin/dev/qwen.png",
+            text: "Qwen Code",
+            href: "/run/plugin/dev/qwen.json",
             params: {
               cwd: info.cwd()
             },
