@@ -64,14 +64,14 @@ module.exports = {
               cwd: info.cwd()
             },
           },
-          {
-            image: "/asset/plugin/dev/grok.jpg",
-            text: "Grok CLI",
-            href: "/run/plugin/dev/grok.json",
-            params: {
-              cwd: info.cwd()
-            },
-          },
+//          {
+//            image: "/asset/plugin/dev/grok.jpg",
+//            text: "Grok CLI",
+//            href: "/run/plugin/dev/grok.json",
+//            params: {
+//              cwd: info.cwd()
+//            },
+//          },
           {
             image: "/asset/plugin/dev/openai.webp",
             text: "OpenAI Codex",
