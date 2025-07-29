@@ -1,0 +1,16 @@
+{
+  "env": [{
+    "key": "GROK_API_KEY",
+    "description": "Grok API Key. Get it here https://accounts.x.ai/sign-in"
+  }],
+  "run": [{
+    "id": "run",
+    "method": "shell.run",
+    "params": {
+      "message": "npx -y @vibe-kit/grok-cli@latest",
+      "path": "{{args.cwd}}",
+      "buffer": 1024,
+      "input": true
+    }
+  }]
+}

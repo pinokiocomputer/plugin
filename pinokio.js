@@ -65,6 +65,14 @@ module.exports = {
             },
           },
           {
+            image: "/asset/plugin/dev/grok.jpg",
+            text: "Grok CLI",
+            href: "/run/plugin/dev/grok.json",
+            params: {
+              cwd: info.cwd()
+            },
+          },
+          {
             image: "/asset/plugin/dev/openai.webp",
             text: "OpenAI Codex",
             href: "/run/plugin/dev/codex.json",
