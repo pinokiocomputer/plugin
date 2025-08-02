@@ -57,6 +57,14 @@ module.exports = {
             },
           },
           {
+            image: "/asset/plugin/dev/crush.png",
+            text: "Crusn",
+            href: "/run/plugin/dev/crush.json",
+            params: {
+              cwd: info.cwd()
+            },
+          },
+          {
             image: "/asset/plugin/dev/gemini.jpeg",
             text: "Gemini CLI",
             href: "/run/plugin/dev/gemini.json",
