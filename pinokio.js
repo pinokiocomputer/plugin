@@ -42,36 +42,34 @@ module.exports = {
         }
       }
     }
-    return [
-      {
-        text: "Dev",
-        icon: "fa-solid fa-code",
-        menu: [
-          terminal,
-          {
-            image: "/asset/plugin/dev/claude.png",
-            text: "Claude Code",
-            href: "/run/plugin/dev/claude.json",
-            params: {
-              cwd: info.cwd()
-            },
+    const ai = {
+      icon: "fa-solid fa-robot",
+      text: "Build with AI",
+      menu: [
+        {
+          image: "/asset/plugin/dev/claude.png",
+          text: "Claude Code",
+          href: "/run/plugin/dev/claude.json",
+          params: {
+            cwd: info.cwd()
           },
-          {
-            image: "/asset/plugin/dev/crush.png",
-            text: "Crusn",
-            href: "/run/plugin/dev/crush.json",
-            params: {
-              cwd: info.cwd()
-            },
+        },
+        {
+          image: "/asset/plugin/dev/crush.png",
+          text: "Crush",
+          href: "/run/plugin/dev/crush.json",
+          params: {
+            cwd: info.cwd()
           },
-          {
-            image: "/asset/plugin/dev/gemini.jpeg",
-            text: "Gemini CLI",
-            href: "/run/plugin/dev/gemini.json",
-            params: {
-              cwd: info.cwd()
-            },
+        },
+        {
+          image: "/asset/plugin/dev/gemini.jpeg",
+          text: "Gemini CLI",
+          href: "/run/plugin/dev/gemini.json",
+          params: {
+            cwd: info.cwd()
           },
+        },
 //          {
 //            image: "/asset/plugin/dev/grok.jpg",
 //            text: "Grok CLI",
@@ -80,55 +78,63 @@ module.exports = {
 //              cwd: info.cwd()
 //            },
 //          },
-          {
-            image: "/asset/plugin/dev/openai.webp",
-            text: "OpenAI Codex",
-            href: "/run/plugin/dev/codex.json",
-            params: {
-              cwd: info.cwd()
-            },
+        {
+          image: "/asset/plugin/dev/openai.webp",
+          text: "OpenAI Codex",
+          href: "/run/plugin/dev/codex.json",
+          params: {
+            cwd: info.cwd()
           },
-          {
-            image: "/asset/plugin/dev/qwen.png",
-            text: "Qwen Code",
-            href: "/run/plugin/dev/qwen.json",
-            params: {
-              cwd: info.cwd()
-            },
+        },
+        {
+          image: "/asset/plugin/dev/qwen.png",
+          text: "Qwen Code",
+          href: "/run/plugin/dev/qwen.json",
+          params: {
+            cwd: info.cwd()
           },
-          {
-            image: "/asset/plugin/dev/vscode.png",
-            text: "VS Code",
-            run: {
-              message: "code .",
-              path: info.cwd()
-            }
-          },
-          {
-            image: "/asset/plugin/dev/cursor.jpeg",
-            text: "Cursor",
-            run: {
-              message: "cursor .",
-              path: info.cwd()
-            }
-          },
-          {
-            image: "/asset/plugin/dev/windsurf.png",
-            text: "Windsurf",
-            run: {
-              message: "windsurf .",
-              path: info.cwd()
-            }
-          },
-          {
-            icon: "fa-solid fa-rotate",
-            text: "Update",
-            shell: {
-              message: "git pull",
-              path: kernel.path("plugin")
-            }
+        },
+        {
+          image: "/asset/plugin/dev/vscode.png",
+          text: "VS Code",
+          run: {
+            message: "code .",
+            path: info.cwd()
           }
-        ],
+        },
+        {
+          image: "/asset/plugin/dev/cursor.jpeg",
+          text: "Cursor",
+          run: {
+            message: "cursor .",
+            path: info.cwd()
+          }
+        },
+        {
+          image: "/asset/plugin/dev/windsurf.png",
+          text: "Windsurf",
+          run: {
+            message: "windsurf .",
+            path: info.cwd()
+          }
+        },
+        {
+          icon: "fa-solid fa-rotate",
+          text: "Update",
+          shell: {
+            message: "git pull",
+            path: kernel.path("plugin")
+          }
+        }
+      ]
+    }
+    return [
+      {
+        text: "Dev",
+        menu: [
+          terminal,
+          ai
+        ]
       },
     ]
   }
