@@ -1,14 +1,9 @@
 {
-  "pre": [{
-    "title": "OpenAI API Key",
-    "env": "OPENAI_API_KEY",
-    "key": "openai.com"
-  }],
   "run": [{
     "id": "run",
     "method": "shell.run",
     "params": {
-      "message": "npx -y @openai/codex",
+      "message": "npx -y @openai/codex {{args.prompt ? args.prompt : ''}}",
       "path": "{{args.cwd}}",
       "input": true
     }
